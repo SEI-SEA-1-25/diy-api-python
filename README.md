@@ -40,16 +40,16 @@ Using what you have learned about Flask, RESTful routing, CRUD operations, and S
 
 **You will need to:**
 1. Fork and clone this repository!
-2. Create your virtual environment `python -m venv venv`
+2. Create your virtual environment `virtualenv venv`. Consult (https://github.com/SEI-SEA-1-25/Virtual-Environment-and-Flask-Setup)[this repo] for detailed instructions!
 4. Create a `.gitignore` and add your virtual environment folder. _(check out [github's suggestions](https://github.com/github/gitignore/blob/master/Python.gitignore) for `.gitignore`)_
 5. Activate your virtual environment
-6. Install dependencies `pip install Flask Flask-SQLAlchemy psycopg2`
-7. Copy our installs into a requirements.txt file. `pip freeze >> requirements.txt`
-8. Create a `models.py` file for your models and an `api.py` for your flask server.
+6. Install dependencies `pip install flask Flask-Migrate flask_sqlalchemy python-dotenv psycopg2`
+7. Copy our installs into a requirements.txt file. `pip freeze > requirements.txt`
+8. Create a `models.py` file for your models, an `index.py` for the database connection and a `server.py` for your flask server.
 
 **Recommended Workflow:**
 1. Stub out your routes
-2. Write you `models.py` file 
+2. Write your `models.py` file 
 3. Link your model to your server
 4. Update your routes and make the magic happen!
 
